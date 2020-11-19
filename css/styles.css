@@ -1,0 +1,922 @@
+@charset "UTF-8";
+
+/* ===== STYLES GÉNÉRAUX ===== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ededed;
+    /* POLICE */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(00, 00, 00, .75);
+}
+
+#global {
+    width: 85vw;
+    margin: 0 auto;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+h3 {
+    margin-top: 0;
+    padding-top: 3vh;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 700; 
+    font-size: 1.5em;
+}
+
+.lettre {
+    color: #BF5434;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #BF5434;
+    width: 60%;
+    margin: 30px auto;
+}
+
+#menuToggle input {
+    display: none;
+}
+
+.hideGE {
+    display: none;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-image: url("../images/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    position: fixed;
+    width: 85vw;
+    height: 50px;
+    line-height: 50px;
+}
+
+
+nav a {
+    color: white;
+    font-weight: 500;
+}
+
+.onscroll,
+.onscroll a {
+    color: black;
+}
+
+nav a:hover,
+.actif,
+.onscroll a .actif {
+    color: #BF5434;
+    transition: .5s ease-in-out;
+}
+
+.actif {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+nav ul,
+#logo_nav {
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+
+}
+
+nav ul,
+nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 5px;
+}
+
+.nav_droite {
+    padding-right: 40px;
+    text-align: right;
+}
+
+#logo_nav {
+    flex-grow: 2;
+    text-align: center;
+}
+
+#logo_nav a:hover {
+    color: #BF5434;
+    transition: .5s ease-in-out;
+}
+
+#logo_nav a {
+    color: black;
+    font-weight: 700;
+}
+
+.bouton {
+    font-weight: 700;
+    color: #BF5434;
+    text-transform: uppercase;
+}
+
+/* LOGO HEADER */
+#logo {
+    /* FLEX */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#logo img {
+    margin: 15vh auto 3vh auto;
+    display: block;
+    width: 50%;
+    height: 50%;
+    padding: 0;
+}
+
+#logo .th {
+    font-size: 2.5em;
+    color: white;
+}
+
+/* ===== HEADER PAGE ===== */
+
+#header_menu {
+    background-image: url("../images/menu.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 75vh;
+}
+
+#header_traiteur {
+    background-image: url("../images/traiteur.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 75vh;
+}
+
+.titrePage {
+    height: 75vh;
+    padding-top: 20vh;
+    padding-left: 5vw;
+    background-color: rgba(242, 170, 171, .6);
+}
+
+.titrePage h1 {
+    font-size: 5em;
+    color: white;
+    margin: 2vh auto;
+    letter-spacing: 2vw;
+}
+
+.lienHeader {
+    width: 15%;
+    margin-right: 2vw;
+    padding: 1vh 2vw;
+    border: 1.5px solid white;
+    border-radius: 30px;
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+.lienHeader a {
+    color: white;
+}
+
+.lienHeader:hover {
+    background-color: white;
+    color: #BF5434;
+    transition: .5s ease-in-out;
+}
+
+.lienHeader:hover a {
+    color: #BF5434;
+    transition: .5s ease-in-out;
+}
+
+
+/* ===== MAIN ===== */
+#main {
+    padding-bottom: 5vh;
+    background-image: linear-gradient(to bottom, #F2AAAB, #FFBA9C);
+}
+
+/* ===== À PROPOS, MENU, ETC ===== */
+#a_propos,
+#menu,
+#traiteur {
+    padding-top: 8vh;
+}
+#a_propos p,
+#menu p,
+#breuvages p,
+#patisseries p,
+#bingsoo p,
+#traiteur p,
+#portfolio p {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#menu,
+#traiteur {
+    border-top: 1vh solid white;
+}
+
+/* ===== SERVICES ===== */
+
+#services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.service {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.service>h3>a,
+.patisserie h3 {
+    font-size: .9em;
+    padding-top: 0;
+    color: #BF5434;
+}
+/* .service img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid #BF5434;
+} */
+
+.service p {
+    text-align: center;
+    margin: auto;
+    width: 75%;
+    background-color: rgba(00, 00, 00, .4);
+    color: #ededed;
+    padding: 2vh 2vw;
+    border-radius: 5px;
+    border: 1px solid rgba(1, 1, 1, 0);
+}
+
+.service p:hover {
+    border: 1px solid white;
+    transition: .5s ease-in-out;
+}
+
+.service_menu {
+    background-image: url("../images/cafemomo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 5%;
+    
+}
+
+.service_traiteur {
+    background-image: url("../images/imgsource/portfolio/18.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 8%;
+    
+}
+
+.service_menu,
+.service_traiteur {
+    margin: 0 auto 3vh auto;
+    height: 150px;
+    border-radius: 5px;
+    /* border: 2px solid #BF5434; */
+
+}
+
+/* ===== MAIN MENU ===== */
+.elmMenu {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.elmMenu p {
+    font-size: .85em;
+    /* padding-bottom: 5vh; */
+}
+.elmMenu ul {
+    list-style: none;
+    margin: 5vh auto;
+    padding: 0;
+    width: 40%;
+}
+
+.elmMenu li {
+    font-weight: 500;
+    padding: .5vh .5vw;
+}
+
+.elmMenu li:last-of-type {
+    text-align: center;
+    color: black;
+    font-weight: 400;
+    margin: 3vh 0;
+}
+
+#patisseries hr {
+    border: 0;
+    height: 1px;
+    background: white;
+    width: 30%;
+    margin: 30px auto;
+}
+
+.patisserie h3 {
+    font-size: 1.25em;
+    margin: 3vh auto 0 auto;
+}
+
+.imgMenu img {
+    display: inline-block;
+    width: 100%;
+    padding: 1vh 1vw;
+    border-radius: 50%;
+}
+
+.imgMenu {
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+/* ===== MAIN TRAITEUR ===== */
+#infosTraiteur {
+    margin: 0 auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "cell1 cell2" "cell3 cell3";
+    grid-gap: 1em;
+
+}
+.elmTraiteur {
+    width: 100%;
+}
+
+.elmTraiteur p,
+.elmTraiteur ul {
+    padding-left: 2em;
+}
+.elmTraiteur li {
+    padding-left: 1em;
+}
+
+.elmTraiteur p {
+    margin-top: 0;
+}
+
+.elmTraiteur h3 {
+    font-size: 1.15em;
+    color: white;
+    text-align: left;
+}
+.elmTraiteur span {
+    color: #BF5434;
+    font-size: 1em;
+    padding-right: 5px;
+}
+
+.elmTraiteur ul {
+    list-style: none;
+}
+.elmTraiteur li:nth-child(odd) {
+    font-weight: 700;
+    padding-top: 1vh;
+}
+.elmTraiteur:last-of-type {
+    grid-area: cell3;
+    text-align: center;
+    padding-left: 0;
+    font-weight: 500;
+}
+.elmTraiteur:last-of-type p {
+    padding-left: 0;
+    font-weight: 500;
+}
+
+#imgPortfolio {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2em;
+    margin: 5vh auto;
+}
+
+#imgPortfolio img {
+    width: 100%;
+}
+
+/* ===== HEURES D'OUVERTURE ===== */
+table {
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #BF5434;
+    width: 250px;
+}
+
+td {
+    padding: 3px 0;
+}
+
+td:first-of-type {
+    color: rgba(0,0,0,0.75);
+}
+
+td:last-of-type {
+    text-align: right;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    font-size: .75em;
+    padding: 5vh 5vw;
+    background-color: white;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
+footer a:hover {
+    color: #BF5434;
+    transition: .5s ease-in-out;
+}
+#logo_footer {
+    text-align: center;
+    font-weight: 700;
+    height: 5vh;
+    line-height: 5vh;
+}
+
+footer img {
+    width: 25px;
+    height: 25px;
+}
+
+#liens_footer ul {
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+}
+
+#liens_footer li {
+    padding: .5vh .5vw .5vh 15vh;
+    text-align: left;
+}
+
+#liens_footer {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+.sec_footer {
+    flex-grow: 1;
+}
+
+#liens_footer ul li:first-of-type {
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+#droits {
+    text-align: center;
+}
+
+/* ===== STYLES MOBILE ===== */
+@media (max-width: 520px) {
+    /* GÉNÉRAL */
+    html {
+        width: 100vw;
+    }
+    
+    #global {
+        width: 100vw;
+        box-shadow: none;
+    }
+    .showMob {
+        display: block;
+        margin: 3vh auto;
+    }
+    .hideMob {
+        display: none;
+    }
+
+    /* HEADER */
+    nav {
+        width: 100vw;
+    }
+    .nav_droite {
+        padding-right: auto;
+        padding-left: 0;
+    }
+
+    #logo img {
+        margin-top: 20vh;
+        display: block;
+        width: 90%;
+        height: 90%;
+    }
+
+    /* NAVIGATION */
+    nav {
+        width: 100vw;
+    }
+
+    /* MENU BURGER */
+    #menuToggle {
+        display: block;
+        position: relative;
+        top: 15px;
+        left: 15px;
+        z-index: 1;
+    }
+
+    #menuToggle a {
+        text-decoration: none;
+        color: rgba(00, 00, 00, .75);
+        
+        transition: color 0.3s ease;
+    }
+
+    #menuToggle a:hover {
+        color: #BF5434;
+        transition: .5s ease-in-out;
+    }
+
+
+    #menuToggle input {
+        display: block;
+        width: 35px;
+        height: 30px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        
+        cursor: pointer;
+        
+        opacity: 0; 
+        z-index: 2;
+        
+        -webkit-touch-callout: none;
+    }
+
+    #menuToggle span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin-bottom: 5px;
+        position: relative;
+        
+        background: #BF5434;
+        border-radius: 3px;
+        
+        z-index: 1;
+        
+        transform-origin: 3px 0px;
+        
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    /* Les lignes deviennent un 'X' */
+    #menuToggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-3px, -1px);
+        background: rgba(00, 00, 00, .75);
+    }
+
+    /* Faire disparaître la ligne du milieu */
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    /* Placer le menu en haut à gauche */
+    .nav_gauche {
+        display: block;
+        position: absolute;
+        width: 75vw;
+        height: 150vh;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 100px;
+
+        background: #ededed;
+        list-style-type: none;
+        /* pour Safari */
+        -webkit-font-smoothing: antialiased;
+        
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    .nav_gauche li {
+        display: block;
+        margin: 5px 0 3px 40px;
+    }
+
+    /* Ajouter la ligne en dessous de la page courante */
+    .actif {
+        border-bottom: 2px solid #FFBA9C;
+        width: 75%;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    /* Le glisser depuis la gauche */
+    #menuToggle input:checked ~ ul {
+        transform: none;
+    }
+
+    #logo_nav {
+        text-align: center;
+        font-size: .9em;
+    }
+
+    /* SERVICES */
+    #services {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* PAGE MENU */
+    .elmMenu p {
+        font-size: .9em;
+        padding-bottom: 2vh;
+    }
+
+    /* PAGE TRAITEUR */
+    #infosTraiteur {
+        grid-template-areas: "cell1" "cell2" "cell3";
+        grid-template-columns: 1fr;
+    }
+    #imgPortfolio {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* FOOTER */
+    .sec_footer {
+        width: 20vw;
+    }
+    #liens_footer {
+        width: 75vw;
+    }
+    #liens_footer li {
+        padding: .5vh .5vw;
+        width: 100%;
+    }
+    #liens_footer ul li:first-of-type {
+        font-size: 1.1em;
+    }
+}
+
+/* ===== STYLES TABLETTE ===== */
+@media (min-width: 521px) and (max-width: 970px) {    
+    /* GÉNÉRAL */
+    #global {
+        width: 100vw;
+        box-shadow: none;
+    }
+    .showTab {
+        display: block;
+    }
+    nav {
+        width: 100vw;
+    }
+    
+    .hideTab {
+        display: none;
+    }
+
+    /* HEADER */
+    .nav_droite {
+        padding-right: auto;
+        padding-left: 0;
+    }
+
+    /* MENU BURGER */
+    #menuToggle {
+    display: block;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    }
+
+    #menuToggle a {
+    text-decoration: none;
+    color: rgba(00, 00, 00, .75);
+        
+    transition: color 0.3s ease;
+    }
+
+    #menuToggle a:hover {
+    color: #BF5434;
+    transition: .5s ease-in-out;
+    }
+
+    #menuToggle input {
+        display: block;
+        width: 35px;
+        height: 30px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        
+        cursor: pointer;
+        
+        opacity: 0; 
+        z-index: 2;
+        
+        -webkit-touch-callout: none;
+    }
+
+    #menuToggle span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin-bottom: 5px;
+        position: relative;
+        
+        background: #BF5434;
+        border-radius: 3px;
+        
+        z-index: 1;
+        
+        transform-origin: 3px 0px;
+        
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    /* Les lignes deviennent un 'X' */
+    #menuToggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-3px, -1px);
+        background: rgba(00, 00, 00, .75);
+    }
+
+    /* Faire disparaître la ligne du milieu */
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    /* Placer le menu en haut à gauche */
+    .nav_gauche {
+        display: block;
+        position: absolute;
+        width: 50vw;
+        height: 150vh;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 100px;
+
+        background: #ededed;
+        list-style-type: none;
+        /* pour Safari */
+        -webkit-font-smoothing: antialiased;
+        
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    .nav_gauche li {
+        display: block;
+        margin: 5px 0 3px 40px;
+    }
+
+    /* Ajouter la ligne en dessous de la page courante */
+    .actif {
+        border-bottom: 2px solid #FFBA9C;
+        width: 75%;
+    }
+
+    /* Le faire glisser de la gauche */
+    #menuToggle input:checked ~ ul {
+        transform: none;
+    }
+
+    #logo img {
+        display: block;
+        width: 70%;
+        height: 70%;
+        margin: 8vh auto 3vh auto;
+    }
+
+    .texte_logo_nav {
+        padding-left: 15vh;
+    }
+
+    /* SERVICES */
+    #services {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .service_traiteur {
+        padding-top: 6%;
+    }
+
+    /* PAGE MENU */
+    .elmMenu p {
+        font-size: .9em;
+        padding-bottom: 2vh;
+    }
+
+    /* PAGE TRAITEUR */
+    #infosTraiteur {
+        grid-template-areas: "cell1" "cell2" "cell3";
+        grid-template-columns: 1fr;
+    }
+
+    #imgPortfolio {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* FOOTER */
+    #liens_footer li {
+        padding: .5vh .5vw .5vh 10vw;
+    }
+    #liens_footer ul li:first-of-type {
+        font-size: 1.1em;
+    }
+}

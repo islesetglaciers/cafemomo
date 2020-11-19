@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Polices et icônes -->
+    <link href="https://dl.dropbox.com/s/vpi3f9s7nhpe7v7/honeybee.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+
+    <title>Café MOMO - Menu</title>
+</head>
+<body>
+    <div id="global">
+        <div id="header_menu">
+            <nav>
+                <div id="menuToggle">
+                    <!-- <span class="burger hideGE"> -->
+                    <!--
+                    A fake / hidden checkbox is used as click reciever,
+                    so you can use the :checked selector on it.
+                    -->
+                    <input type="checkbox" />
+                    
+                    <!--
+                    Some spans to act as a hamburger.
+                    
+                    They are acting like a real hamburger,
+                    not that McDonalds stuff.
+                    -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    
+                    <ul class="liens nav_gauche">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a class="actif" href="menu.html">Menu</a></li>
+                        <li><a href="#heures">Horaire</a></li>
+                        <li><a href="traiteur.html">Traiteur</a></li>
+                    </ul>
+                </div>
+                <span id="logo_nav">
+                    <a href="index.html"><span class="texte_logo_nav">Café MOMO</span></a>
+                </span>
+                <ul class="liens nav_droite">
+                    <li><a href="https://facebook.com/dessertcafemomo" title="Trouvez-nous sur Facebook" target="_blank"><span class="th th-facebook"></span></a></li>
+                    <li><a href="https://instagram.com/cafemomolove" title="Suivez-nous sur Instagram" target="_blank"><span class="th th-instagram-o"></span></a></li>
+                    <li>KakaoTalk</li>
+                    <li class="bouton">EN</li>
+                    <li class="bouton">KR</li>
+                </ul>
+            </nav>
+            <div class="titrePage">
+                <h1>Menu</h1>
+                <div class="navPage">
+                    <span class="lienHeader"><a href="#breuvages">Breuvages</a></span>
+                    <span class="lienHeader"><a href="#patisseries">Pâtisseries</a></span>
+                    <span class="lienHeader"><a href="#bingsoo">Bingsoo</a></span>
+                </div>
+            </div>
+        </div>
+        <div id="main"> 
+            <div id="menu">
+                <h3><span class="lettre">N</span>otre Menu</h3>
+                <p>Chaque jour nous travaillons au développement d’un menu qui sait marier bon goût et produits de qualité. Nos breuvages et desserts faits sur place en sont la preuve, il ne vous reste qu’à venir les savourer!</p>
+            </div>
+            <hr>
+            <!-- BREUVAGES -->
+            <div id="breuvages">
+                <h3><span class="lettre">B</span>reuvages</h3>
+                <div class="elmMenu">
+                    <p>Nous offrons une grande variété de cafés spécialisés, en plus de thés Camellia Sinensis et autres thés lattés. De plus, nous confectionnons nos propres limonades maison (choisissez entre citron et pamplemousse!) et lattés aux fruits.</p>
+                    <ul>
+                        <li>Latté</li>
+                        <li>Cappuccino</li>
+                        <li>Macchiato au caramel</li>
+                        <li>Latté à la vanille</li>
+                        <li>Flat white</li>
+                        <li>Cortado</li>
+                        <li>Chaï latté</li>
+                        <li>Thé coréen</li>
+                        <li>2.50$ - 4$</li>
+                    </ul>
+                    <div class="imgMenu hideMob hideTab">
+                            <img src="images/imgsource/breuvages/6.jpg" alt="" title="Lattés">
+                            <img src="images/imgsource/breuvages/1.jpg" alt="" title="Thé Camellia Sinensis">
+                            <img src="images/imgsource/breuvages/3.jpg" alt="" title="Limonades maison">
+                            <img src="images/imgsource/breuvages/4.jpg" alt="" title="Lattés aux fruits">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- PÂTISSERIES -->
+            <div id="patisseries" >
+                <h3><span class="lettre">P</span>âtisseries</h3>
+                <div class="elmMenu">
+                    <p>Venez découvrir chaque jour notre sélection de gâteaux et macarons maison! Nous offrons une grande variété de saveurs qui sauront plaire à tout coup!</p>
+                    <div class="patisserie">
+                        <h3>Gâteaux</h3>
+                            <ul>
+                                <li>Mousse de patate douce</li>
+                                <li>Shortcake aux fraises</li>
+                                <li>Matcha</li>
+                                <li>Gâteau au fromage avec coulis de bleuets</li>
+                                <li>Oreo</li>
+                                <li>Tiramisu</li>
+                                <li>4.75$</li> 
+                            </ul>
+                            <div class="imgMenu hideMob hideTab">
+                                    <img src="images/imgsource/gateaux/1.jpg" alt="" title="Variétés quotidiennes">
+                                    <img src="images/imgsource/gateaux/7.jpg" alt="" title="Shortcake aux fraises">
+                                    <img src="images/imgsource/gateaux/9.png" alt="" title="Gâteau au fromage avec coulis de bleuets">
+                                    <img src="images/imgsource/gateaux/10.png" alt="" title="Gâteau matcha et gâteau mousse de patate douce">
+                            </div>
+                    </div>
+                    <hr>
+                    <div class="patisserie">
+                        <h3>Macarons</h3>
+                        <ul>
+                            <li>Ferrero Rocher</li>
+                            <li>Matcha et chocolat blanc</li>
+                            <li>Choco bear</li>
+                            <li>Injeolmi et mochi</li>
+                            <li>Nutella</li>
+                            <li>Crème brûlée</li>
+                            <li>Thé Earl Grey</li>
+                            <li>3$ chaque</li>
+                        </ul>
+                        <div class="imgMenu hideMob hideTab">
+                                <img src="images/imgsource/gateaux/5.jpg" alt="" title="Variétés quotidiennes">
+                                <img src="images/imgsource/gateaux/8.jpg" alt="" title="Variétés quotidiennes">
+                                <img src="images/imgsource/gateaux/11.png" alt="" title="Citron et bleuet">
+                                <img src="images/imgsource/gateaux/4.jpg" alt="" title="Fraises">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- BINGSOO -->
+            <div id="bingsoo" >
+                <h3><span class="lettre">B</span>ingsoo</h3>
+                <div class="elmMenu">
+                    <p>Le bingsoo est un dessert coréen semblable à un mélange de crème glacé et “snowcone”. Nous offrons les nôtres dans une grande variété de saveurs, des classiques Injeolmi, fèves rouges et matcha, au Tiramisu, en passant par les fruits frais.</p>
+                    <ul>
+                        <li>3.50 - 7.50$</li>
+                    </ul>
+                    <div class="imgMenu hideMob hideTab">
+                            <img src="images/imgsource/bingsoo/1.jpg" alt="" title="Matcha avec fèves rouges">
+                            <img src="images/imgsource/bingsoo/3.jpg" alt="" title="Bleuets">
+                            <img src="images/imgsource/bingsoo/7.jpg" alt="" title="Injeolmi et mochi">
+                            <img src="images/imgsource/bingsoo/4.jpg" alt="" title="Tiramisu">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="heures">
+                <h3><span class="lettre">H</span>eures d'ouverture</h3>
+                <table>
+                    <tr>
+                        <td>Lundi</td>
+                        <td>12h - 21h</td>
+                    </tr>
+                    <tr>
+                        <td>Mardi</td>
+                        <td>12h - 21h</td>
+                    </tr>
+                    <tr>
+                        <td>Mercredi</td>
+                        <td>12h - 21h</td>
+                    </tr>
+                    <tr>
+                        <td>Jeudi</td>
+                        <td>12h - 21h</td>
+                    </tr>
+                    <tr>
+                        <td>Vendredi</td>
+                        <td>12h - 22h</td>
+                    </tr>
+                    <tr>
+                        <td>Samedi</td>
+                        <td>12h - 22h</td>
+                    </tr>
+                    <tr>
+                        <td>Dimanche</td>
+                        <td>12h - 20h</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <!-- <p id="logo_footer"><img src="images/roundlogo.png" alt="Logo Rond Café Momo"> Café Momo</p> -->
+            
+            <div id="liens_footer">
+                <ul class="sec_footer">
+                    <li>Navigation</li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#heures">Horaire</a></li>
+                    <li><a href="traiteur.html">Traiteur</a></li>
+                </ul>
+                <ul class="sec_footer">
+                    <li>Traiteur </li>
+                    <li><a href="traiteur.html#services">Services</a></li>
+                    <li><a href="traiteur.html#infos">Infos</a></li>
+                    <li><a href="traiteur.html#portfolio">Portfolio</a></li>
+                </ul>
+                <ul class="sec_footer">
+                    <li>Social</li>
+                    <li><a href="https://facebook.com/dessertcafemomo" title="Trouvez-nous sur Facebook" target="_blank"><span class="th th-facebook"></span> Facebook</a></li>
+                    <li><a href="https://instagram.com/cafemomolove" title="Suivez-nous sur Instagram" target="_blank"><span class="th th-instagram-o"></span> Instagram</a></li>
+                    <li><a href="https://dessertcafemomo.com/">Site original</a></li>
+                </ul>
+            </div>
+            <div id="droits">
+                    <p>Copyright © 2019 Café Momo. Tous droits réservés.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>window.onscroll = function() {scrollFunction()};</script>
+</html>

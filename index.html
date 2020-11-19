@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Polices et icônes -->
+    <link href="https://dl.dropbox.com/s/vpi3f9s7nhpe7v7/honeybee.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Javascript -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+
+    <title>Café MOMO - Accueil</title>
+</head>
+<body>
+    <div id="global">
+        <header>
+            <nav>
+                <div id="menuToggle">
+                    <!-- <span class="burger hideGE"> -->
+                    <!--
+                    A fake / hidden checkbox is used as click reciever,
+                    so you can use the :checked selector on it.
+                    -->
+                    <input type="checkbox" />
+                    
+                    <!--
+                    Some spans to act as a hamburger.
+                    
+                    They are acting like a real hamburger,
+                    not that McDonalds stuff.
+                    -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    
+                    <ul class="liens nav_gauche">
+                        <li><a class="actif" href="index.html">Accueil</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="#heures">Horaire</a></li>
+                        <li><a href="traiteur.html">Traiteur</a></li>
+                    </ul>
+                </div>
+                
+                <span id="logo_nav">
+                    <a href="index.html"><!-- <img src="images/roundlogo.png" alt=""> --><span class="texte_logo_nav">Café MOMO</span></a>
+                </span>
+                <ul class="liens nav_droite">
+                    <li><a href="https://facebook.com/dessertcafemomo" title="Trouvez-nous sur Facebook" target="_blank"><span class="th th-facebook"></span></a></li>
+                    <li><a href="https://instagram.com/cafemomolove" title="Suivez-nous sur Instagram" target="_blank"><span class="th th-instagram-o"></span></a></li>
+                    <li>KakaoTalk</li>
+                    <li class="bouton">EN</li>
+                    <li class="bouton">KR</li>
+                </ul>
+            </nav>
+            <div id="logo">
+                <img src="images/logoMomo.png" alt="">
+                <a href="#a_propos"><span class="th th-chevron-down"></span></a>
+            </div>
+        </header>
+        <div id="main">
+            <div id="a_propos">
+                <h3><span class="lettre">À</span> Propos</h3>
+                <p>Café Momo est un café dessert coréen de quartier situé au coeur du Monkland Village. Nous offrons une variété de desserts faits maison ainsi que des cafés et thés spécialisés. Vous aurez même peut-être la chance de voir Momo elle-même lors de votre visite!</p>
+            </div>
+            <hr>
+            <h3><span class="lettre">S</span>ervices</h3>
+            <div id="services">
+                <div class="service">
+                    <h3><a href="menu.html">Menu</a></h3>
+                    <!-- <img src="images/imgsource/breuvages/6.jpg" alt=""> -->
+                    <div class="service_menu">
+                            <a href="menu.html"><p>Consultez notre sélection de cafés et de thés, ainsi que nos pâtisseries maison et notre grande variété de saveurs de bingsoo!</p></a>
+                    </div>
+                </div>
+                <hr class="hideGE showMob showTab">
+                <div class="service">
+                    <h3><a href="traiteur.html">Traiteur</a></h3>
+                    <!-- <img src="images/imgsource/gateaux/gateauTraiteur.jpg" alt=""> -->
+                    <div class="service_traiteur">
+                            <a href="traiteur.html"><p>Obtenez plus d’informations sur toutes nos options de desserts sur mesure!</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <div id="heures">
+                <h3><span class="lettre">H</span>eures d'ouverture</h3>
+                <table>
+                    <tr>
+                        <td>Lundi</td>
+                        <td>12h - 21h</td>
+                    </tr>
+                    <tr>
+                        <td>Mardi</td>
+                        <td>12h - 21h</td>
+                    </tr>
+                    <tr>
+                        <td>Mercredi</td>
+                        <td>12h - 21h</td>
+                    </tr>
+                    <tr>
+                        <td>Jeudi</td>
+                        <td>12h - 21h</td>
+                    </tr>
+                    <tr>
+                        <td>Vendredi</td>
+                        <td>12h - 22h</td>
+                    </tr>
+                    <tr>
+                        <td>Samedi</td>
+                        <td>12h - 22h</td>
+                    </tr>
+                    <tr>
+                        <td>Dimanche</td>
+                        <td>12h - 20h</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <!-- <p id="logo_footer"><img src="images/roundlogo.png" alt="Logo Rond Café Momo"> Café Momo</p> -->
+            
+            <div id="liens_footer">
+                <ul class="sec_footer">
+                    <li>Navigation</li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#heures">Horaire</a></li>
+                    <li><a href="traiteur.html">Traiteur</a></li>
+                </ul>
+                <ul class="sec_footer">
+                    <li>Traiteur </li>
+                    <li><a href="traiteur.html#services">Services</a></li>
+                    <li><a href="traiteur.html#infos">Infos</a></li>
+                    <li><a href="traiteur.html#portfolio">Portfolio</a></li>
+                </ul>
+                <ul class="sec_footer">
+                    <li>Social</li>
+                    <li><a href="https://facebook.com/dessertcafemomo" title="Trouvez-nous sur Facebook" target="_blank"><span class="th th-facebook"></span> Facebook</a></li>
+                    <li><a href="https://instagram.com/cafemomolove" title="Suivez-nous sur Instagram" target="_blank"><span class="th th-instagram-o"></span> Instagram</a></li>
+                    <li><a href="https://dessertcafemomo.com/"><span class="th th-link"></span>Site original</a></li>
+                </ul>
+            </div>
+            <div id="droits">
+                    <p>Copyright © 2019 Café Momo. Tous droits réservés.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>window.onscroll = function() {scrollFunction()};</script>
+</html>
